@@ -1,0 +1,1 @@
+"./LCDDriver.obj" "./LCD_Init.obj" "./MSP430FR6989_LCD_DISPLAY_ADC.obj" "../lnk_msp430fr6989.cmd" -llibmpu_init.a -llibmath.a -llibc.a 
