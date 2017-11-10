@@ -3,6 +3,7 @@
 #include "msp430g2553.h"
 
 long temp;
+void uartInit();
 int main(void)
 {
   WDTCTL = WDTPW + WDTHOLD;                 // Stop WDT
@@ -13,6 +14,7 @@ int main(void)
   TACCTL0 = CCIE;                           // Enable Timer Interrupt
   TACTL = TASSEL_2 + MC_1+ TACLR;           // TACLK = SMCLK, Up mode.
   LPM0;                                     // Wait for delay.
+  uartInit();
   TACCTL0 &= ~CCIE;                         // Disable Timer Interrupt
   __disable_interrupt();
 
