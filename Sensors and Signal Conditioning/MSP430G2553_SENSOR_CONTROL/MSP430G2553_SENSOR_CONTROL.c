@@ -14,7 +14,6 @@ int main(void)
   TACTL = TASSEL_2 + MC_1+ TACLR;           // TACLK = SMCLK, Up mode.
   LPM0;                                     // Wait for delay.
   TACCTL0 &= ~CCIE;                         // Disable Timer Interrupt
-  uartInit();                               // Function Call for UART Initialization
   __disable_interrupt();
 
   while(1)
