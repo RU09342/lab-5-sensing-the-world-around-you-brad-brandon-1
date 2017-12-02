@@ -51,8 +51,5 @@ As shown, the ADC values drop considerably when the lights are turned off, which
  A video of the same circuit powering an RGB LED is included below, however it does not look as nice in the clip as it did was it was recorded. What should be seen is that when the flashlight of the phone is shown on the resistor, the LED blinks at a slower frequency.
  
  ![giphy-downsized-large](https://user-images.githubusercontent.com/31701000/32585812-490d0cd6-c4cd-11e7-9eff-325a8bda4d10.gif)
- 
- 3. Photo Transistor
- 
-<s> The hardware portion should be the same for each of the processors. You will need to have a total of 3 circuits made, each corresponding to a different sensor. You need to look at the range of measurements and the amount of resolution you can get out of your ADC and determine how to convert, scale, and filter your signal. Don't forget the fact that you will need to convert to a voltage, making some of these circuits not so trivial. The main goal as the hardware designer for these sensors is to provide the microprocessor with the best resolution to maximize the effectiveness of the ADC. <s/>
+
 
